@@ -1,10 +1,10 @@
 import express from "express";
 
+import userRoutes from "./userRoutes";
+
 const router = express.Router();
 
-// Example route
-router.get("/", (req, res) => {
-  res.send("API is working!");
-});
+// Main Routes
+router.use("/user", userRoutes);
 
 export default router;
