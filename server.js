@@ -2,13 +2,13 @@ import dotenv from "dotenv";
 dotenv.config();
 
 import express from "express";
-import userRoutes from "./routes/userRoutes.js";
+import routes from "./routes/index.js";
 
 const app = express();
 app.use(express.json());
 
 // Routes
-app.use("/api", userRoutes);
+app.use("/api", routes);
 
 // Root
 app.get("/", (req, res) => {

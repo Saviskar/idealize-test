@@ -12,8 +12,6 @@ export const findAll = async () => {
   return data;
 };
 
-console.log("test");
-
 export const findById = async () => {};
 
 export const update = async () => {};
